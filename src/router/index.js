@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routes from './array';
 import {GETCOOKIE} from "@/assets/common/js/global";
-import {_token_admin as adminToken} from "@/pages/config/config";
+import {_token_admin as adminToken} from "@/config/config";
 
 Vue.use(VueRouter);
 const router = new VueRouter({

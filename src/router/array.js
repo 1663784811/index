@@ -1,4 +1,5 @@
 const index = () => import('@/pages/home/Index');
+
 const array = [
     {
         path: "",
