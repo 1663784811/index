@@ -13,7 +13,7 @@
 <script>
     import TreeNode from "@/pages/tree/TreeNode.vue";
     import {CREATETREESTRUCTURE} from "@/assets/common/js/global.js";
-    import {getAdminTree} from '@/pages/config/api/getData';
+    import {getAdminTree} from '@/config/api/getData';
 
 
     export default {
