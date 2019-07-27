@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from "./router";
 import store from "./store";
 import "@babel/polyfill";
-import "../assets/common/css/reset.css";
+import "./assets/common/css/reset.css";
 import 'iview/dist/styles/iview.css';
 import iView from 'iview';
 import iEditor from 'iview-editor';
