@@ -21,9 +21,11 @@
                 <Tabs v-if="tabDate.length>0"
                       :value="tabTabsValue">
                     <TabPane
-                            v-for="tabObj in tabDate"
+                            v-for="(tabObj , index ) in tabDate"
                             :label="tabObj.name"
                             :icon="tabObj.iconType"
+                            :key="index"
+
                     >
                         <iframe :src="tabObj.url" frameborder="0" class="tabIframe"></iframe>
                     </TabPane>

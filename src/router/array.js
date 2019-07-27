@@ -12,7 +12,7 @@ const AdminIndex = () => import('@/pages/admin/system/AdminIndex');  //启动页
 const Statistics = () => import('@/pages/admin/system/Statistics');  //统计
 const UserBaseInfo = () => import('@/pages/admin/user/UserBaseInfo');
 const UpdatePassWord = () => import('@/pages/admin/user/UpdatePassWord');
-//====================================================表
+// //====================================================表
 const TAdmin = () => import('@/pages/admin/components/TAdmin');
 const TDepartment = () => import('@/pages/admin/components/TDepartment');
 const TRole = () => import('@/pages/admin/components/TRole');
@@ -46,6 +46,50 @@ const array = [
     {
         path: "/publicNumber",
         component: PublicNumber
-    }
+    },
+    {
+        path: '/admin',
+        component: admin
+    },
+    {
+        path: '/admin/login',
+        component: adminLogin
+    },
+    {
+        path: '/admin/register',
+        component: Register
+    },
+    {
+        path: '/admin/index',
+        component: AdminIndex
+    },
+    {
+        path: '/admin/Statistics',
+        component: Statistics
+    },
+    {
+        path: '/admin/UserBaseInfo',
+        component: UserBaseInfo
+    },
+    {
+        path: '/admin/UpdatePassWord',
+        component: UpdatePassWord
+    },
+    {
+        path: '/admin/TAdmin',
+        component: TAdmin
+    },
+    {
+        path: '/admin/TDepartment',
+        component: TDepartment
+    },
+    {
+        path: '/admin/TRole',
+        component: TRole
+    },
+    {
+        path: '/admin/TPower',
+        component: TPower
+    },
 ];
 export default array;

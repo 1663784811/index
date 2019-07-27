@@ -3,7 +3,7 @@
         <div class="container">
             <h2 class="title" v-if="title">{{title}}</h2>
             <Row :gutter="16">
-                <Col span="6" v-for="data in dataArr">
+                <Col span="6" v-for="(data, index) in dataArr" :key="index">
                     <div class="cellBox" :style="{height:height}">
                         <template v-if="data.to">
                             <a :href="data.to" target="_blank">

@@ -116,7 +116,6 @@
     } from "@/config/api/tPower";
     import {
         API_updateTRolePowerArray,
-        API_delTRolePower
     } from "@/config/api/tRolePower";
 
     import BaseOperation from '@/components/admin/BaseOperation';
@@ -125,8 +124,7 @@
     import BasePanel from '@/components/admin/BasePanel';
     import BaseTreeCheckbox from '@/components/admin/BaseTreeCheckbox';
     import PanelTreeCheckbox from '@/components/common/PanelTreeCheckbox';
-
-    import TDepartmentTree from '@/pages/tree/TDepartmentTree.vue';
+    import TDepartmentTree from './TDepartmentTree.vue';
 
     export default {
         name: "TRole",
