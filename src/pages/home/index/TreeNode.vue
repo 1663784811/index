@@ -39,7 +39,7 @@
 </template>
 
 <script>
-    import CollapseTransition from '../../../assets/common/js/collapseTransition.js';
+    import CollapseTransition from '@/assets/common/js/collapseTransition.js';
 
     export default {
         name: "TreeNode",
