@@ -96,8 +96,6 @@
         methods: {},
         mounted() {
 
-            console.log("sssssssssssssssssss")
-
         }
     }
 </script>
