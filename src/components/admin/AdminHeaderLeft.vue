@@ -9,11 +9,6 @@
                     </div>
                 </router-link>
             </li>
-            <!--<li class="f_left">-->
-            <!--<router-link to="/bar">-->
-            <!--<h1 class="logo"><img src="../../assets/logo.png" alt=""></h1>-->
-            <!--</router-link>-->
-            <!--</li>-->
         </ul>
     </div>
 </template>

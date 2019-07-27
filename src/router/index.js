@@ -6,7 +6,7 @@ import {_token_admin as adminToken} from "@/config/config";
 
 Vue.use(VueRouter);
 const router = new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     routes,
     scrollBehavior() {
         return {x: 0, y: 0}
