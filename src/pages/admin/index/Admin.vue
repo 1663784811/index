@@ -25,7 +25,6 @@
                             :label="tabObj.name"
                             :icon="tabObj.iconType"
                             :key="index"
-
                     >
                         <iframe :src="tabObj.url" frameborder="0" class="tabIframe"></iframe>
                     </TabPane>
@@ -48,7 +47,6 @@
             AdminHeaderLeft,
             AdminHeaderRight,
             AdminLeftTree
-
         },
         data() {
             return {

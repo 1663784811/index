@@ -2,11 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routes from './array';
 import {GETCOOKIE} from "@/assets/common/js/global";
-import {_token_admin as adminToken, MODE} from "@/config/config";
+import {_token_admin as adminToken} from "@/config/config";
 
 Vue.use(VueRouter);
 const router = new VueRouter({
-    mode: MODE,
+    // mode: 'history',
     routes,
     scrollBehavior() {
         return {x: 0, y: 0}
