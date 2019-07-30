@@ -1,0 +1,52 @@
+[
+  {
+    "tid": "1",
+    "name": "系统管理",
+    "iconType": "logo-tux",
+    "isOpenTree": false
+  },
+  {
+    "tid": "2",
+    "pid": "1",
+    "name": "统计",
+    "iconType": "ios-menu-outline",
+    "url": "/admin/Statistics"
+  },
+  {
+    "tid": "4",
+    "name": "权限管理系统",
+    "iconType": "ios-folder",
+    "isOpenTree": false
+  },
+  {
+    "tid": "5",
+    "pid": "4",
+    "name": "管理员",
+    "iconType": "ios-person",
+    "vue": "TAdmin",
+    "url": "/admin/TAdmin",
+    "isOpenTree": false
+  },
+  {
+    "tid": "6",
+    "pid": "4",
+    "name": "组管理",
+    "iconType": "ios-people",
+    "url": "/admin/TDepartment"
+  },
+  {
+    "tid": "7",
+    "pid": "4",
+    "name": "角色管理",
+    "iconType": "ios-person-outline",
+    "url": "/admin/TRole"
+  },
+  {
+    "tid": "8",
+    "pid": "4",
+    "name": "权限管理",
+    "iconType": "md-eye",
+    "url": "/admin/TPower",
+    "vue": "TPower"
+  }
+]
