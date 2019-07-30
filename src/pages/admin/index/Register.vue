@@ -87,7 +87,6 @@
                     this.registerLoding = false;
                 })
             }
-
         }
     }
 </script>

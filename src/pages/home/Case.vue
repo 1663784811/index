@@ -39,7 +39,7 @@
                         img: "/img/shop.png",
                         title: "购物商城",
                         introduction: "供网上购物的平台，消费者可以在网上寻找自己想要的商品，然后进行网上购买，网上支付。",
-                        to: "/shop"
+                        to: "http://s.cyyaw.cn"
                     },
                     {
                         img: "/img/app.png",

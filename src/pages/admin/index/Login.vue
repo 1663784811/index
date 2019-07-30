@@ -25,6 +25,7 @@
     import '@/assets/admin/css/adminPage.css';
     import {loginAdmin} from '@/config/api/getData.js';
     import {SETCOOKIE} from '@/assets/common/js/global.js';
+    import {_token_admin,_userinfo_admin} from '@/config/config.js';
 
     export default {
         name: "Login",
@@ -49,8 +50,8 @@
                 this.loginLoding = true;
                 loginAdmin(this.loginData).then(res => {
                     if (res.success) {
-                        localStorage.setItem("userInfo", JSON.stringify(res.data));
-                        SETCOOKIE("token", res.token);
+                        localStorage.setItem(_userinfo_admin, JSON.stringify(res.data));
+                        SETCOOKIE(_token_admin, res.token);
                         this.$Message.success("登录成功");
                         this.$router.push({
                             path: '/admin'

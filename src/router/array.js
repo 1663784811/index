@@ -6,8 +6,8 @@ const PublicNumber = () => import('@/pages/home/PublicNumber');
 
 //=========================================
 const admin = () => import('@/pages/admin/index/Admin');  // 首页
-const adminLogin = () => import('@/pages/admin/index/Login');
-const Register = () => import('@/pages/admin/index/Register');
+const adminLogin = () => import('@/pages/admin/index/Login');  // 登录
+const Register = () => import('@/pages/admin/index/Register');  // 注册
 const AdminIndex = () => import('@/pages/admin/system/AdminIndex');  //启动页面
 const Statistics = () => import('@/pages/admin/system/Statistics');  //统计
 const UserBaseInfo = () => import('@/pages/admin/user/UserBaseInfo');
@@ -17,9 +17,6 @@ const TAdmin = () => import('@/pages/admin/components/TAdmin');
 const TDepartment = () => import('@/pages/admin/components/TDepartment');
 const TRole = () => import('@/pages/admin/components/TRole');
 const TPower = () => import('@/pages/admin/components/TPower');
-
-
-
 
 
 const array = [
