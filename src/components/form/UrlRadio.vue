@@ -1,7 +1,8 @@
 <template>
     <RadioGroup v-model="social">
-        <Radio v-for="item in arrayData"
+        <Radio v-for="(item ,index) in arrayData"
                :label="toStr(item[dataKey])"
+               :key="index"
         >
             {{item[dataName]}}
         </Radio>

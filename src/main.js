@@ -8,11 +8,12 @@ import 'iview/dist/styles/iview.css';
 import iView from 'iview';
 import iEditor from 'iview-editor';
 
+
 Vue.use(iView);
 Vue.use(iEditor);
 Vue.config.productionTip = false;
 new Vue({
-  store,
-  router,
-  render: h => h(App),
+    store,
+    router,
+    render: h => h(App),
 }).$mount('#app');

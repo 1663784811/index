@@ -7,7 +7,7 @@
         <div class="operationRight">
             <Input v-model="searchData">
                 <Select v-model="selectValue" slot="prepend" style="width: 80px">
-                    <Option v-for="item  in searchWhere" :value="item.keyStr">{{item.name}}</Option>
+                    <Option v-for="(item,index)  in searchWhere" :key="index" :value="item.keyStr">{{item.name}}</Option>
                 </Select>
                 <Button slot="append" icon="ios-search" @click="clickSearchBtn"></Button>
             </Input>

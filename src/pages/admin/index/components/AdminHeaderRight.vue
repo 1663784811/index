@@ -79,13 +79,13 @@
                     {
                         tid: "baseUserInfo",
                         name: "基本信息",
-                        url: "/#/admin/UserBaseInfo",
+                        url: "/admin/UserBaseInfo",
                         iconType: "ios-menu-outline"
                     },
                     {
                         tid: "updatePwd",
                         name: "修改密码",
-                        url: "/#/admin/UpdatePassWord",
+                        url: "/admin/UpdatePassWord",
                         iconType: "ios-menu-outline"
                     }
                 ],
@@ -93,7 +93,7 @@
                     {
                         tid: "message",
                         name: "消息",
-                        url: "/#/admin/message/list/0",
+                        url: "/admin/message/list/0",
                         iconType: "ios-menu-outline"
                     },
                     {

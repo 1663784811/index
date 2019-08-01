@@ -45,19 +45,19 @@
                         img: "/img/app.png",
                         title: "购物app",
                         introduction: "移动互联网时代是全民的移动互联网时代，是每个人的时代，也是每个企业的时代。APP便捷了每个人的生活。",
-                        to: "/going"
+                        to: "/#/going"
                     },
                     {
                         img: "/img/s.png",
                         title: "小程序",
                         introduction: "一种新的开放能力，可以在微信内被便捷地获取和传播，同时具有出色的使用体验。",
-                        to: "/going"
+                        to: "/#/going"
                     },
                     {
                         img: "/img/weixinservice.png",
                         title: "微信公众号",
                         introduction: "给企业和组织提供更强大的业务服务与用户管理能力，帮助企业快速实现全新的公众号服务平台。",
-                        to: "/publicNumber"
+                        to: "/#/publicNumber"
                     },
                 ]
             }

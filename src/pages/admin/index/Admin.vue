@@ -26,7 +26,7 @@
                             :icon="tabObj.iconType"
                             :key="index"
                     >
-                        <iframe :src="tabObj.url" frameborder="0" class="tabIframe"></iframe>
+                        <iframe :src="'/#'+tabObj.url" frameborder="0" class="tabIframe"></iframe>
                     </TabPane>
                 </Tabs>
             </div>

@@ -8,7 +8,7 @@
             :z-index="zIndex"
     >
         <!--==========         基本表单弹窗        ==========-->
-        <div v-for="(fieldDataObj , index) in fieldData">
+        <div v-for="(fieldDataObj , index) in fieldData" :key="index">
 
             <!--==== 输入框  =====-->
             <div v-if="fieldDataObj.controlType ==='input'" class="formRow">
@@ -31,7 +31,7 @@
                     <i v-if="fieldDataObj.isRequired" style="color: #ed4014;margin-right: 4px">*</i>{{fieldDataObj.title}}:
                 </span>
                 <RadioGroup v-model="fromData[fieldDataObj.key]">
-                    <Radio v-for="selectObj in fieldDataObj.selectArr" :label="selectObj.key">{{selectObj.title}}
+                    <Radio v-for="(selectObj,index) in fieldDataObj.selectArr" :label="selectObj.key" :key="index">{{selectObj.title}}
                     </Radio>
                 </RadioGroup>
             </div>
@@ -59,7 +59,7 @@
                     <i v-if="fieldDataObj.isRequired" style="color: #ed4014;margin-right: 4px">*</i>{{fieldDataObj.title}}:
                 </span>
                 <CheckboxGroup v-model="fromData[fieldDataObj.key]">
-                    <Checkbox v-for="selectObj in fieldDataObj.selectArr" :label="selectObj.key">{{selectObj.title}}
+                    <Checkbox v-for="(selectObj ,index) in fieldDataObj.selectArr" :key="index" :label="selectObj.key">{{selectObj.title}}
                     </Checkbox>
                 </CheckboxGroup>
             </div>
@@ -80,7 +80,7 @@
                     <i v-if="fieldDataObj.isRequired" style="color: #ed4014;margin-right: 4px">*</i>{{fieldDataObj.title}}:
                 </span>
                 <Select v-model="fromData[fieldDataObj.key]">
-                    <Option v-for="selectObj in fieldDataObj.selectArr" :value="selectObj.key">{{selectObj.title}}
+                    <Option v-for="(selectObj,index) in fieldDataObj.selectArr" :key="index" :value="selectObj.key">{{selectObj.title}}
                     </Option>
                 </Select>
             </div>

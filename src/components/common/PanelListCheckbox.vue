@@ -7,7 +7,7 @@
         <div class="checkboxDiv">
             <template v-if="checkBoxData.length >=0">
                 <div class="tagBox" v-show="tagData.length>0">
-                    <Tag closable color="success" v-for="tag in tagData" @on-close="closeTag(tag.tid)">{{tag.name}}
+                    <Tag closable color="success" v-for="(tag ,index) in tagData" :key="index" @on-close="closeTag(tag.tid)">{{tag.name}}
                     </Tag>
                 </div>
                 <div class="tableBox">
