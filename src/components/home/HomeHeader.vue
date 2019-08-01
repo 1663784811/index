@@ -17,11 +17,17 @@
                         <li class="f_left userli" :class="{active : $route.path==='/cases' }">
                             <router-link to="cases">个人作品</router-link>
                         </li>
+                        <li class="f_left userli" :class="{active : $route.path==='/map' }">
+                            <router-link to="map">地图</router-link>
+                        </li>
+                        <li class="f_left userli" :class="{active : $route.path==='/statistics' }">
+                            <router-link to="statistics">统计</router-link>
+                        </li>
                         <li class="f_left userli" :class="{active : $route.path==='/about' }">
                             <router-link to="about">关于我们</router-link>
                         </li>
-                        <li class="f_left userli" style="display: none">
-                            <router-link to="/login">
+                        <li class="f_left userli" style="">
+                            <router-link to="/">
                                 <Avatar icon="ios-person" size="large"/>
                             </router-link>
                         </li>

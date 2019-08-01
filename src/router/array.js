@@ -1,9 +1,11 @@
 const index = () => import('@/pages/home/Home');
 const cases = () => import('@/pages/home/Case');
 const about = () => import('@/pages/home/About');
-const Going = () => import('@/pages/home/Going');
-const PublicNumber = () => import('@/pages/home/PublicNumber');
-const Letter = () => import('@/pages/home/Letter');
+const Going = () => import('@/pages/home/Going');  //
+const PublicNumber = () => import('@/pages/home/PublicNumber'); //
+const Letter = () => import('@/pages/home/Letter');  //信
+const Map = () => import('@/pages/home/Map');  //信
+const HomeStatistics = () => import('@/pages/home/Statistics');  //信
 
 //=========================================
 const admin = () => import('@/pages/admin/index/Admin');  // 首页
@@ -44,9 +46,15 @@ const array = [
     {
         path: "/letter",
         component: Letter,
-        meta:{
-
-        }
+        meta: {}
+    },
+    {
+        path: "/map",
+        component: Map,
+    },
+    {
+        path: "/statistics",
+        component: HomeStatistics,
     },
     {
         path: "/publicNumber",
