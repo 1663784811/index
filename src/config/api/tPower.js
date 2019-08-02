@@ -1,6 +1,5 @@
 import {AJAXGET, AJAXPOST} from "@/assets/common/js/global";
-
-const baseurl = "http://localhost:8080";
+import {_BaseUrl as baseurl} from "../config.js";
 
 
 /**

@@ -1,6 +1,5 @@
 import {AJAXGET, AJAXPOST} from "@/assets/common/js/global";
-
-const baseurl = "http://localhost:8080";
+import {_BaseUrl as baseurl} from "../config.js";
 
 /**
  * 获取所有表格
@@ -41,7 +40,6 @@ export const API_delTRolePower = (parameter) => AJAXPOST(baseurl + "/admin/delTR
  *  批量添加
  */
 export const API_addTRolePowerArray = (parameter) => AJAXPOST(baseurl + "/admin/addTRolePowerArray", parameter);
-
 
 
 /**

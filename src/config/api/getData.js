@@ -1,6 +1,6 @@
 import {AJAXGET, AJAXPOST} from "@/assets/common/js/global";
+import {_BaseUrl as baseurl} from "../config.js";
 
-const baseurl = "http://localhost:8080";
 /**
  * 登录
  */

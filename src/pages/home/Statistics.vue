@@ -20,7 +20,6 @@
 </template>
 
 <script>
-
     import HomeHeader from '@/components/home/HomeHeader';
     import Information from '@/components/home/Information';
     import HomeFooter from '@/components/home/HomeFooter';
