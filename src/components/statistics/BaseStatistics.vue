@@ -4,8 +4,9 @@
 </template>
 
 <script>
+    import echarts from 'echarts';
 
-    import echarts from 'echarts'
+
 
     export default {
         name: "BaseBarStatistics",
@@ -63,7 +64,10 @@
                 this.myChart.setOption(this.optionEcharts);
             },
             //========  重置参数
-            setOption: function (option) {
+            setOption: function (option, mapkey, map) {
+                if (mapkey && mapkey != null && mapkey != "" && map && map != null && map != "") {
+                    echarts.registerMap(mapkey, map);
+                }
                 this.optionEcharts = option;
                 this.initEchar();
             }
