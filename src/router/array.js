@@ -7,6 +7,7 @@ const Letter = () => import('@/pages/home/Letter');  //信
 const H5 = () => import('@/pages/home/H5');  //h5
 const Map = () => import('@/pages/home/Map');  // 地图
 const HomeStatistics = () => import('@/pages/home/Statistics');  // 统计
+const Study = () => import('@/pages/home/Study');  // 统计
 //=========================================
 const admin = () => import('@/pages/admin/index/Admin');  // 首页
 const adminLogin = () => import('@/pages/admin/index/Login');  // 登录
@@ -57,6 +58,10 @@ const array = [
     {
         path: "/h5",
         component: H5,
+    },
+    {
+        path: "/study",
+        component: Study,
     },
     {
         path: "/statistics",

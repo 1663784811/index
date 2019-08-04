@@ -14,6 +14,9 @@
                         <li class="f_left userli" :class="{active :( $route.path==='/' || $route.path==='/index' )}">
                             <router-link to="index">首页</router-link>
                         </li>
+                        <li class="f_left userli" :class="{active : $route.path==='/study' }">
+                            <router-link to="study">技术交流</router-link>
+                        </li>
                         <li class="f_left userli" :class="{active : $route.path==='/cases' }">
                             <router-link to="cases">个人作品</router-link>
                         </li>

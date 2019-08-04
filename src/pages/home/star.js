@@ -14,7 +14,7 @@ function getRandInterval(min, max) {
  * @constructor
  */
 export const Star = function (universe, width, height) {
-    this.reset = function () {
+    this.reset = function (width, height) {
         this.giant = getProbability(3);
         this.comet = this.giant ? false : getProbability(10);
         this.x = getRandInterval(0, width - 10);
@@ -35,13 +35,13 @@ export const Star = function (universe, width, height) {
             this.opacity += this.do;
         }
     };
-    this.fadeOut = function () {
+    this.fadeOut = function (width, height) {
         if (this.fadingOut) {
             this.fadingOut = this.opacity < 0 ? false : true;
             this.opacity -= this.do / 2;
             if (this.x > width || this.y < 0) {
                 this.fadingOut = false;
-                this.reset();
+                this.reset(width, height);
             }
         }
     };
@@ -69,11 +69,11 @@ export const Star = function (universe, width, height) {
         universe.closePath();
         universe.fill();
     };
-    this.move = function () {
+    this.move = function (width, height) {
         this.x += this.dx;
         this.y += this.dy;
         if (this.fadingOut === false) {
-            this.reset();
+            this.reset(width, height);
         }
         if (this.x > width - (width / 4) || this.y < 0) {
             this.fadingOut = true;

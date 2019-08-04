@@ -14,7 +14,6 @@
                 </div>
                 <div class="articleContent">
                     提起孙正义，不认识的人或许会认为他是个普通的中国人，略有了解的会认为他是一个日本人，但其实他是祖籍中国的韩裔日本富翁。孙正义16岁进入美国加州大学伯克利分校学习，在校期间就开始做生意，毕业时已经是身家几百万美元的富翁了。毕业后孙正义回到日本创建了软银集团，正式拉开了投资大享的序幕。
-
                     提起孙正义，不认识的人或许会认为他是个普通的中国人，略有了解的会认为他是一个日本人，但其实他是祖籍中国的韩裔日本富翁。孙正义16岁进入美国加州大学伯克利分校学习，在校期间就开始做生意，毕业时已经是身家几百万美元的富翁了。毕业后孙正义回到日本创建了软银集团，正式拉开了投资大享的序幕。
                     在国内，孙正义的名字通常与马云联系在一起，这是因为两人之间的一段投资佳话。20世纪90年代，互联网如火如荼的发展，孙正义先后投资了UT斯达康和雅虎并获得了成功，这坚定了孙正义投资互联网企业的信心。面对庞大的中国市场，孙正义也表露出了投资欲望，此时，UT斯达康创始人吴鹰把到处找投资的“小老弟”马云介绍给了孙正义。
                     马云与孙正义仅会面6分钟就敲定了投资计划，孙正义原本想要投资3000万美元获得阿里巴巴控股权，但在阿里巴巴CFO蔡崇信的坚持下，最终改为2000万美元获得40%的股权。随后阿里巴巴的发展让孙正义获得了巨额的回报。如今阿里巴巴的市值高达4000亿美元，经过不断减持后孙正义的软银集团仍持有阿里巴巴29.1%的股权，价值超过1000亿美元。因为这一系列的大胆又收益恐怖的投资，孙正义被称为“亚洲巴菲
@@ -56,7 +55,6 @@
 
     export default {
         name: "Letter",
-
         data() {
             return {
                 starDensity: .216,
@@ -73,7 +71,10 @@
         },
         mounted() {
             this.initPage();
-
+            let that = this;
+            window.onresize = function () {
+                that.windowResizeHandler();
+            }
         },
         methods: {
             initPage: function () {
@@ -107,24 +108,21 @@
                 this.universe = this.$refs.universe.getContext('2d');
                 for (let i = 0; i < this.starCount; i++) {
                     this.stars[i] = new Star(this.universe, this.width, this.height);
-                    this.stars[i].reset();
+                    this.stars[i].reset(this.width, this.height);
                 }
             },
-
             draw: function () {
                 this.universe.clearRect(0, 0, this.width, this.height);
                 let starsLength = this.stars.length;
                 for (let i = 0; i < starsLength; i++) {
                     let star = this.stars[i];
-                    star.move();
+                    star.move(this.width, this.height);
                     star.fadeIn();
-                    star.fadeOut();
+                    star.fadeOut(this.width, this.height);
                     star.draw();
                 }
                 window.requestAnimationFrame(this.draw);
             }
-
-
         }
     }
 </script>
