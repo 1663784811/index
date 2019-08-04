@@ -17,6 +17,9 @@
                         <li class="f_left userli" :class="{active : $route.path==='/cases' }">
                             <router-link to="cases">个人作品</router-link>
                         </li>
+                        <li class="f_left userli" :class="{active : $route.path==='/h5' }">
+                            <router-link to="h5">h5</router-link>
+                        </li>
                         <li class="f_left userli" :class="{active : $route.path==='/map' }">
                             <router-link to="map">地图</router-link>
                         </li>

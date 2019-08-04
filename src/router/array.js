@@ -1,12 +1,12 @@
 const index = () => import('@/pages/home/Home');
 const cases = () => import('@/pages/home/Case');
 const about = () => import('@/pages/home/About');
-const Going = () => import('@/pages/home/Going');  //
-const PublicNumber = () => import('@/pages/home/PublicNumber'); //
+const Going = () => import('@/pages/home/Going');
+const PublicNumber = () => import('@/pages/home/PublicNumber');
 const Letter = () => import('@/pages/home/Letter');  //信
-const Map = () => import('@/pages/home/Map');  //信
-const HomeStatistics = () => import('@/pages/home/Statistics');  //信
-
+const H5 = () => import('@/pages/home/H5');  //h5
+const Map = () => import('@/pages/home/Map');  // 地图
+const HomeStatistics = () => import('@/pages/home/Statistics');  // 统计
 //=========================================
 const admin = () => import('@/pages/admin/index/Admin');  // 首页
 const adminLogin = () => import('@/pages/admin/index/Login');  // 登录
@@ -15,6 +15,8 @@ const AdminIndex = () => import('@/pages/admin/system/AdminIndex');  //启动页
 const Statistics = () => import('@/pages/admin/system/Statistics');  //统计
 const UserBaseInfo = () => import('@/pages/admin/user/UserBaseInfo');//个人信息
 const UpdatePassWord = () => import('@/pages/admin/user/UpdatePassWord');// 修改个人信息
+
+
 // //====================================================表
 const TAdmin = () => import('@/pages/admin/components/TAdmin');
 const TDepartment = () => import('@/pages/admin/components/TDepartment');
@@ -51,6 +53,10 @@ const array = [
     {
         path: "/map",
         component: Map,
+    },
+    {
+        path: "/h5",
+        component: H5,
     },
     {
         path: "/statistics",
