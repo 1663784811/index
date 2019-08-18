@@ -48,5 +48,37 @@
     "iconType": "md-eye",
     "url": "/admin/TPower",
     "vue": "TPower"
+  },
+  {
+    "tid": "9",
+    "name": "资源管理",
+    "iconType": "md-eye",
+    "url": "/admin/TPower",
+    "vue": "TPower",
+    "isOpenTree": false
+  },
+  {
+    "tid": "10",
+    "pid": "9",
+    "name": "图片",
+    "iconType": "md-eye",
+    "url": "/admin/TPower",
+    "vue": "TPower"
+  },
+  {
+    "tid": "11",
+    "name": "运营管理",
+    "iconType": "md-eye",
+    "url": "/admin/TPower",
+    "vue": "TPower",
+    "isOpenTree": false
+  },
+  {
+    "tid": "12",
+    "pid": "11",
+    "name": "banner图",
+    "iconType": "md-eye",
+    "url": "/admin/TPower",
+    "vue": "TPower"
   }
 ]
