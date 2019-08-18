@@ -17,12 +17,17 @@ const Statistics = () => import('@/pages/admin/system/Statistics');  //统计
 const UserBaseInfo = () => import('@/pages/admin/user/UserBaseInfo');//个人信息
 const UpdatePassWord = () => import('@/pages/admin/user/UpdatePassWord');// 修改个人信息
 
+const Photo = () => import('@/pages/admin/system/Photo');//
+
 
 // //====================================================表
 const TAdmin = () => import('@/pages/admin/components/TAdmin');
 const TDepartment = () => import('@/pages/admin/components/TDepartment');
 const TRole = () => import('@/pages/admin/components/TRole');
 const TPower = () => import('@/pages/admin/components/TPower');
+const TBanner = () => import('@/pages/admin/components/TBanner');
+const TQtype = () => import('@/pages/admin/components/TQtype');
+const TQuestion = () => import('@/pages/admin/components/TQuestion');
 
 
 const array = [
@@ -115,5 +120,21 @@ const array = [
         path: '/admin/TPower',
         component: TPower
     },
+    {
+        path: '/admin/TBanner',
+        component: TBanner
+    },
+    {
+        path: '/upload/Photo',
+        component: Photo
+    },
+    {
+        path: '/admin/TQtype',
+        component: TQtype
+    },
+    {
+        path: '/admin/tQuestion',
+        component: TQuestion
+    }
 ];
 export default array;

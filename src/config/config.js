@@ -5,3 +5,6 @@ export const _userinfo_admin = "shop_userinfo_admin";  // token
 
 
 
+export const _upload = "http://upload.cyyaw.cn";  // token
+
+

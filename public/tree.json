@@ -62,12 +62,12 @@
     "pid": "9",
     "name": "图片",
     "iconType": "md-eye",
-    "url": "/admin/TPower",
+    "url": "/upload/Photo",
     "vue": "TPower"
   },
   {
     "tid": "11",
-    "name": "运营管理",
+    "name": "小程序运营",
     "iconType": "md-eye",
     "url": "/admin/TPower",
     "vue": "TPower",
@@ -78,7 +78,20 @@
     "pid": "11",
     "name": "banner图",
     "iconType": "md-eye",
-    "url": "/admin/TPower",
-    "vue": "TPower"
+    "url": "/admin/TBanner"
+  },
+  {
+    "tid": "13",
+    "pid": "11",
+    "name": "分类",
+    "iconType": "md-eye",
+    "url": "/upload/TQtype"
+  },
+  {
+    "tid": "14",
+    "pid": "11",
+    "name": "试题",
+    "iconType": "md-eye",
+    "url": "/admin/tQuestion"
   }
 ]

@@ -170,3 +170,27 @@ img {
     font-size: 14px;
     text-shadow: 0 0 1px #dadada;
 }
+
+.bgSuccess {
+    background: #19be6b;
+}
+
+.bgWarning {
+    background: #ff9900
+}
+
+.bgError {
+    background: #ed4014
+}
+
+.colorSuccess {
+    color: #19be6b;
+}
+
+.colorWarning {
+    color: #ff9900
+}
+
+.colorError {
+    color: #ed4014
+}
