@@ -83,9 +83,16 @@
   {
     "tid": "13",
     "pid": "11",
-    "name": "分类",
+    "name": "试题分类",
     "iconType": "md-eye",
-    "url": "/upload/TQtype"
+    "url": "/admin/TQtype"
+  },
+  {
+    "tid": "15",
+    "pid": "11",
+    "name": "知识",
+    "iconType": "md-eye",
+    "url": "/admin/tKnowledge"
   },
   {
     "tid": "14",

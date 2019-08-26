@@ -1,10 +1,15 @@
 const isProduction = process.env.NODE_ENV === 'production';
-export const _BaseUrl = isProduction ? "http://admin.cyyaw.cn" : "http://localhost:8080";   //基本url
+
+//基本url
+// export const _BaseUrl = isProduction ? "http://admin.cyyaw.cn" : "http://localhost:8080";
+export const _BaseUrl = isProduction ? "https://wx.cyyaw.cn/flysandy" : "https://wx.cyyaw.cn/flysandy";
+//上传文件
+export const _upload = "https://admin.cyyaw.cn/resources";
+
+
+//====================== token
+export const _userinfo_admin = "shop_userinfo_admin";
 export const _token_admin = "shop_token_admin";  // token
-export const _userinfo_admin = "shop_userinfo_admin";  // token
 
-
-
-export const _upload = "http://upload.cyyaw.cn";  // token
 
 

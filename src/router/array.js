@@ -27,7 +27,9 @@ const TRole = () => import('@/pages/admin/components/TRole');
 const TPower = () => import('@/pages/admin/components/TPower');
 const TBanner = () => import('@/pages/admin/components/TBanner');
 const TQtype = () => import('@/pages/admin/components/TQtype');
+const Knowledge = () => import('@/pages/admin/components/TKnowledge');
 const TQuestion = () => import('@/pages/admin/components/TQuestion');
+const TKnowledgeUpdate = () => import('@/pages/admin/components/TKnowledgeUpdate');
 
 
 const array = [
@@ -131,6 +133,15 @@ const array = [
     {
         path: '/admin/TQtype',
         component: TQtype
+    },
+    {
+        path: '/admin/tKnowledge',
+        component: Knowledge
+    },
+    {
+        path: '/admin/TKnowledgeUpdate',
+        component: TKnowledgeUpdate,
+        props: true
     },
     {
         path: '/admin/tQuestion',

@@ -21,7 +21,7 @@ module.exports = {
         disableHostCheck: true,
         open: true,
         host: '0.0.0.0',
-        // port: 8081,
+        port: 8081,
         https: false,
         hotOnly: false,
         proxy: null,
