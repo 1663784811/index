@@ -1,47 +1,54 @@
 <template>
     <div class="currencyTabBox">
-        <div class="formRow">
+        <div class="clear_f">
+            <div class="formBox f_left">
+                <div class="formRow">
                 <span class="fieldName textOne">
                     <i style="color: #ed4014;margin-right: 4px">*</i>标题:
                 </span>
-            <Input class="formInput" type="text" v-model="submitObj.title"/>
-        </div>
-        <div class="formRow">
+                    <Input class="formInput" type="text" v-model="submitObj.title"/>
+                </div>
+                <div class="formRow">
                 <span class="fieldName textOne">
                     <i style="color: #ed4014;margin-right: 4px">*</i>作者:
                 </span>
-            <Input class="formInput" type="text" v-model="submitObj.author"/>
-        </div>
-        <div class="formRow">
+                    <Input class="formInput" type="text" v-model="submitObj.author"/>
+                </div>
+                <div class="formRow">
                 <span class="fieldName textOne">
                     <i style="color: #ed4014;margin-right: 4px">*</i>图片:
                 </span>
-            <Input class="formInput" type="text" v-model="submitObj.img"/>
-        </div>
-        <div class="formRow">
+                    <Input class="formInput" type="text" v-model="submitObj.img"/>
+                </div>
+                <div class="formRow">
                 <span class="fieldName textOne">
                     <i style="color: #ed4014;margin-right: 4px">*</i>类型:
                 </span>
-            <Input class="formInput" type="text" v-model="submitObj.type"/>
-        </div>
-        <div class="formRow">
+                    <Input class="formInput" type="text" v-model="submitObj.type"/>
+                </div>
+                <div class="formRow">
                 <span class="fieldName textOne">
                     <i style="color: #ed4014;margin-right: 4px">*</i>状态:
                 </span>
-            <Input class="formInput" type="text" v-model="submitObj.status"/>
+                    <Input class="formInput" type="text" v-model="submitObj.status"/>
+                </div>
+                <div class="formRow">
+                    <span class="fieldName textOne">来源:</span>
+                    <Input class="formInput" type="text" v-model="submitObj.source"/>
+                </div>
+                <div class="formRow">
+                    <span class="fieldName textOne">备注:</span>
+                    <Input class="formInput" type="textarea" v-model="submitObj.note"/>
+                </div>
+            </div>
+            <div class="editorBox f_left">
+                <div class="formRow">
+                    <span class="fieldName textOne"></span>
+                    <div class="editorBox" ref="editorBox"></div>
+                </div>
+            </div>
         </div>
-        <div class="formRow">
-            <span class="fieldName textOne">来源:</span>
-            <Input class="formInput" type="text" v-model="submitObj.source"/>
-        </div>
-        <div class="formRow">
-            <span class="fieldName textOne"></span>
-            <div class="contentTextName">内容</div>
-        </div>
-        <div class="formRow">
-            <span class="fieldName textOne"></span>
-            <div class="editorBox" ref="editorBox"></div>
-        </div>
+
         <div class="footer">
             <Button class="btn" type="success" size="large" :loading="saveLoading" @click="submitDataFn">保存</Button>
             <Button class="btn"
@@ -57,22 +64,11 @@
     import '@/assets/admin/css/adminPage.css';
     import BaseOperation from '@/components/admin/BaseOperation';
     import BaseWindow from '@/components/BaseWindow';
-    import E from 'wangeditor';
-    import {
-        TitleJson,
-        addFieldDataJson,
-        updateFieldDataJson,
-        TableHeaderJson,
-        searchWhereJson
-    } from "@/config/jsonObj/tKnowledge";
-
     import {
         API_findIdTKnowledge,
-        API_findPageTKnowledge,
-        API_delTKnowledge,
         API_saveTKnowledge
     } from "@/config/api/tKnowledge";
-
+    import E from 'wangeditor';
 
     export default {
         name: "TKnowledgeUpdate",
@@ -94,9 +90,6 @@
             };
             this.editor.create();
             document.getElementsByClassName("w-e-text-container")[0].style.height = "700px";
-            if (this.submitObj.content) {
-                this.editor.txt.html(this.submitObj.content);
-            }
             let id = this.$router.currentRoute.query.id;
             if (id) {
                 this.submitObj.id = id;
@@ -137,13 +130,21 @@
         height 100%;
         overflow auto;
 
-    .formRow
-        position: relative;
-        padding: 10px 10px 10px 100px;
-        min-height: 42px;
-        width: 900px;
-        margin: auto;
+        .formBox
+            width: 400px;
+            margin-right: 50px;
+            margin-bottom: 100px;
 
+            .formRow
+                position: relative;
+                padding: 10px 10px 10px 100px;
+                min-height: 42px;
+
+        .editorBox
+            width: 750px;
+
+            .ieditorBox
+                min-height: 500px;
 
     .fieldName
         position: absolute;

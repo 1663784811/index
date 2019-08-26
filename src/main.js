@@ -7,7 +7,7 @@ import "./assets/common/css/reset.css";
 import 'iview/dist/styles/iview.css';
 import iView from 'iview';
 import iEditor from 'iview-editor';
-
+import 'iview-editor/dist/iview-editor.css';
 
 Vue.use(iView);
 Vue.use(iEditor);

@@ -194,3 +194,7 @@ img {
 .colorError {
     color: #ed4014
 }
+
+.ieditorBox .ivu-input-wrapper {
+    min-height: 500px;
+}
