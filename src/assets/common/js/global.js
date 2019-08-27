@@ -52,9 +52,6 @@ export const DECODEVALUE = function (s) {
 };
 
 
-
-
-
 /**
  * Get 请求
  * @param _url URI
@@ -72,7 +69,7 @@ export const AJAXGET = function (_url, _params = {}, serializer = 0) {
  * @param _params
  * @returns {Promise<any>}
  */
-export const AJAXPOST = function (_url, _params = {}, serializer = 0) {
+export const AJAXPOST = function (_url, _params = {}, serializer = 1) {
     return AJAXREQUEST(_url, _params, serializer, 'post');
 };
 
@@ -135,8 +132,8 @@ export const GETHEADER = function () {
         token = GETCOOKIE('token');
     }
     return {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json;charset=UTF-8',
+        // 'Accept': 'application/json',
+        // 'Content-Type': 'application/json;charset=UTF-8',
         'token': token
     }
 };

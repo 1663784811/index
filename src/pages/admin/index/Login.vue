@@ -35,7 +35,7 @@
                 loginData: {
                     account: "",
                     password: "",
-                    checkCode: ""
+                    checkCode: "sssssssssssssss"
                 },
                 //=====   响应数据
                 loginLoding: false
