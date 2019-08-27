@@ -107,7 +107,7 @@
         methods: {
             delData: function () {
                 this.isDelLoading = true;
-                API_delRPhoto({idArr: [this.showImgObj.id]}).then(res => {
+                API_delRPhoto( [this.showImgObj.id] ).then(res => {
                     this.$Message.success(res.message);
                     this.isDelLoading = false;
                     this.isDelInfo = false;
