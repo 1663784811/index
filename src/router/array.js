@@ -4,6 +4,7 @@ const about = () => import('@/pages/home/About');
 const Going = () => import('@/pages/home/Going');
 const PublicNumber = () => import('@/pages/home/PublicNumber');
 const Letter = () => import('@/pages/home/Letter');  //信
+const Code = () => import('@/pages/home/Code');  //信
 const H5 = () => import('@/pages/home/H5');  //h5
 const Map = () => import('@/pages/home/Map');  // 地图
 const HomeStatistics = () => import('@/pages/home/Statistics');  // 统计
@@ -65,6 +66,10 @@ const array = [
     {
         path: "/h5",
         component: H5,
+    },
+    {
+        path: "/code",
+        component: Code,
     },
     {
         path: "/study",
